@@ -6,7 +6,7 @@ React-Redux simple weather app.
 
 ## How to start
 
-** Required NPM **
+**Required NPM**
 
 1. Clone the repository.
 2. Write in terminal in project root folder:
