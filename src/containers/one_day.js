@@ -7,10 +7,23 @@ class OneDay extends Component {
         const temp = cityData.main.temp.toFixed(0);
         const {pressure} = cityData.main;
         const {country} = cityData.sys;
+        var bCol = "";
 
+        if(temp>30){
+        bCol="hot";
+        }else if(temp>10){
+        bCol="warm";
+        }else if(temp>-10){
+        bCol="medium";
+        }else if(temp>-30){
+        bCol="cold";
+        }else{
+        bCol="very-cold";
+    };
+    
         return (
-            <div key={name} className="wrapper d-flex align-items-center justify-content-center">
-                <div className="d-flex align-items-center justify-content-center flex-column odContainer">
+            <div key={name} className="wrapper d-flex align-items-center justify-content-center "> 
+                <div className={`d-flex align-items-center justify-content-center flex-column odContainer ${bCol}`}>
                     <div className="p-2 odCity">
                         <h1>{name}, {country}</h1>
                     </div>

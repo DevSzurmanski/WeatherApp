@@ -31,9 +31,24 @@ a.nav-item.nav-link{
 
 .odContainer {
     padding: 60px;
-    background-color: rgba(76, 175, 80, 0.2);
     border-radius: 30px;
 }
 .nav-right{
     margin-right: 25px;
+}
+/*Baxkgrounds for temps*/
+.very-cold{
+background-color: rgba(0, 0, 255, 0.2);
+}
+.cold{
+background-color: rgba(0, 128, 255, 0.2);
+}
+.medium{
+background-color: rgba(0, 255, 0, 0.2);
+}
+.warm{
+background-color: rgba(255, 255, 0, 0.2);
+}
+.hot{
+background-color: rgba(255, 0, 0, 0.2);
 }

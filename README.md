@@ -6,6 +6,7 @@ React-Redux simple weather app.
 ## Features:
 - Easy check temperature and pressure in any city
 - Easy check forecasts with temperature, pressure and humidities in any city
+- On current weather page background depends on temperature
 
 ## How to start
 

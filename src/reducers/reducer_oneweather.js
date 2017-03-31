@@ -1,9 +1,6 @@
 import {ONE_FETCH, FETCH_WEATHER} from '../actions/index';
 
-const INITIAL_STATE = {
-    one: [],
-    forecast: []
-};
+const INITIAL_STATE = { one: [], forecast: [] };
 
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {

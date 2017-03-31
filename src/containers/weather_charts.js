@@ -13,7 +13,7 @@ class WeatherCharts extends Component {
         return (
             <tr key={name}>
                 <td ><h2>{name}</h2></td>
-                <td ><Chart data={temps} color="orange" units="K"/></td>
+                <td ><Chart data={temps} color="orange" units="&deg;C"/></td>
                 <td ><Chart data={pressures} color="green" units="hPa"/></td>
                 <td ><Chart data={humidities} color="blue" units="%"/></td>
             </tr>
@@ -22,20 +22,17 @@ class WeatherCharts extends Component {
 
     render() {
 
-        console.log(this.props.forecast);
-
         return (
             <table className="table table-hover">
                 <thead>
                     <tr >
                         <th >City</th>
-                        <th >Temperature (K)</th>
+                        <th >Temperature (&deg;C)</th>
                         <th >Pressure (hPa)</th>
                         <th >Humidities (%)</th>
                     </tr>
                 </thead>
                 <tbody>
-
                     {this.props.forecast.map(this.renderWeather)}
                 </tbody>
             </table>
