@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import SearchBar from '../containers/search_bar';
 import OneDay from '../containers/one_day';
+import Navbar from './navbar';
+import WeatherCharts from '../containers/weather_charts'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <SearchBar />
-        <OneDay />
-        </div>
-    );
-  }
+const App = (props) => {
+
+  return (
+    <div>
+      <Navbar/>
+      <SearchBar/> 
+      {props.children}
+    </div>
+  );
 }
+
+export default App;

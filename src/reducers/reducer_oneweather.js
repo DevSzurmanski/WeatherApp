@@ -1,13 +1,21 @@
-import {FETCH_WEATHER} from '../actions/index';
+import {ONE_FETCH, FETCH_WEATHER} from '../actions/index';
 
-export default function(state = [], action) {
-   switch (action.type){
-case FETCH_WEATHER:
+const INITIAL_STATE = {
+    one: [],
+    forecast: []
+};
 
-return [action.payload.data];
+export default function (state = INITIAL_STATE, action) {
+    switch (action.type) {
+        case ONE_FETCH:
 
+            return { ...state, one: action.payload.data }
 
-   }
+        case FETCH_WEATHER:
+        
+            return { ...state, forecast: [action.payload.data, ...state.forecast] }
+
+    }
 
     return state;
 }

@@ -1,19 +1,39 @@
 html, body {
-            height: 100vh-20px;
-            margin: 0;
-        }
+    height: 100vh-20px;
+    margin: 0;
+}
 
-        .wrapper {
-            min-height: 80vh; 
-        }
-        .odCity{
-            margin-bottom:30px;
-        }
-        .input-group{
-            margin-top:20px;
-        }
-        .odContainer{
-            padding:60px;
-            background-color: rgba(76, 175, 80, 0.2);
-            border-radius: 30px;
-        }
+table {
+    table-layout: fixed;
+}
+
+td, th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+nav{
+    border-radius: 0 0 10px 10px;
+}
+a.nav-item.nav-link{
+    margin: 0px 15px;
+}
+.wrapper {
+    min-height: 80vh;
+}
+
+.odCity {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.odContainer {
+    padding: 60px;
+    background-color: rgba(76, 175, 80, 0.2);
+    border-radius: 30px;
+}
+.nav-right{
+    margin-right: 25px;
+}
